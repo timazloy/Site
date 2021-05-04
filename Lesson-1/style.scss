@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+  
+.header {
+    background-color: #222222;
+    height: 75px;
+}
+  
+.header__inside {
+    border: 1px solid #ccc;
+    height: 74px;
+    display: flex;
+    align-items: center;
+  }
+  
+.block_1 {
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+  
+  }
