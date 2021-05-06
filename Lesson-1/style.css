@@ -483,14 +483,12 @@ margin-top: 95px;
 }
 
 .footer__block__left {
-  border: 1px solid red;
   width: 360px;
   height: 250px;
   margin-top: 90px;
 }
 
 .footer__block__right {
-  border: 1px solid red;
   width: 360px;
   height: 250px;
   margin-top: 150px;
@@ -584,7 +582,6 @@ margin-top: 95px;
 }
 
 .bottom__content__left {
-  border: 1px solid red;
   width: 330px;
   height: 20px;
   margin-top: 30px;
@@ -601,7 +598,6 @@ margin-top: 95px;
 }
 
 .bottom__content__right {
-  border: 1px solid red;
   height: 32px;
   width: 150px;
   margin-top: 24px;
