@@ -826,10 +826,36 @@ background-image: url(../Lesson-1/img/inst__2.svg);
 }
 
 .main__page__right{
-  margin-left: 280px;
+  margin-left: 310px;
   display: flex;
   margin-top: 51px;
+  position: relative;
+
 }
+
+.menu__size {
+  border: 1px solid #000;
+  width: 79px;
+  height: 103px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 160px;
+  top: 24px;
+  z-index: 1;
+
+}
+
+.input__menu {
+  margin: 6px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+
 
 .page__1 {
   font-family: 'Lato', sans-serif;
@@ -838,8 +864,16 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
-  margin-left: 48px;
-  
+  margin-left: 20px;
+  border: 1px solid #000;
+}
+
+.page__button {
+ width: 10px;
+ height: 10px;
+ border: 1px solid red;
+ margin-left: 10px;
+ margin-top: 4px;
 
 }
 
