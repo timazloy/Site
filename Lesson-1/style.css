@@ -357,95 +357,105 @@ font-family: 'Lato', sans-serif;
   height: 580px;
   margin-top: 57px;
   position: relative;
-
 }
 
+.add-box {
+
+  position: absolute;
+  justify-content: center;
+  top: 98px;
+  width: 100%;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  box-shadow: 8px #fff;
+  
+}
+
+.card:hover .card__hover {
+  filter: brightness(50%);
+}
+
+
 .button__card__1 {
-  background-image: url(../Lesson-1/img/img1.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__2 {
-  background-image: url(../Lesson-1/img/img2.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__3 {
-  background-image: url(../Lesson-1/img/img3.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__4 {
-  background-image: url(../Lesson-1/img/img4.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__5 {
-  background-image: url(../Lesson-1/img/img5.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__6 {
-  background-image: url(../Lesson-1/img/img6.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__7 {
-  background-image: url(../Lesson-1/img/img7.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__8 {
-  background-image: url(../Lesson-1/img/img8.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__9 {
-  background-image: url(../Lesson-1/img/img9.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__10 {
-  background-image: url(../Lesson-1/img/img10.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__11 {
-  background-image: url(../Lesson-1/img/img11.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .button__card__12 {
-  background-image: url(../Lesson-1/img/img12.svg);
   background-repeat: no-repeat;
   display: block;
   height: 100%;
 }
 
 .card:hover {
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 3px black;
  
 }
 
@@ -834,7 +844,6 @@ background-image: url(../Lesson-1/img/inst__2.svg);
 }
 
 .menu__size {
-  border: 1px solid #000;
   width: 79px;
   height: 103px;
   background-color: #FFFFFF;
