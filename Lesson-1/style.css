@@ -9,6 +9,7 @@
   
 }
 
+
 .header {
   background-color: #222222;
   height: 75px;
@@ -357,30 +358,50 @@ font-family: 'Lato', sans-serif;
   height: 580px;
   margin-top: 57px;
   position: relative;
+  background-color: #F8F8F8;
 }
 
 .add-box {
-
+  display: none;
   position: absolute;
   justify-content: center;
-  top: 98px;
+  top: 189px;
   width: 100%;
 }
 
 .add {
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #fff;
   text-decoration: none;
   box-shadow: 8px #fff;
   
 }
 
+
+
+.add:hover {
+  box-shadow: 0 0 10px #fff;
+}
+
+.add-txt {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+}
+
 .card:hover .card__hover {
   filter: brightness(50%);
 }
 
+.card:hover .add-box {
+  display: flex;
+}
 
 .button__card__1 {
   background-repeat: no-repeat;
@@ -783,15 +804,14 @@ background-image: url(../Lesson-1/img/inst__2.svg);
 
 .top__catalog__left {
   width: 194px;
-  border: 1px solid red;
   margin-top: 60px;
 }
 
 .top__catalog__right {
-  border: 1px solid red;
   width: 209px;
   padding-bottom: 17px;
   margin-top: 65px;
+  display: flex;
 }
 
 .top__catalog__text {
@@ -811,16 +831,16 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   font-size: 14px;
   line-height: 17px;
   color: #636363;
+  text-decoration: none;
+  padding: 0px 4px 0px 4px;
+
 }
 
-.top__catalog__text__right__2 {
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
+.top__catalog__text__right:hover {
   color: #F16D7F;
 }
+
+
 
 .main__page__left {
   margin-top: 51px;
@@ -832,7 +852,27 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   line-height: 17px;
   color: #000000;
   display: flex;
-  
+  position: relative;
+}
+
+.page__button__left {
+  width: 10px;
+  height: 10px;
+  border: 1px solid red;
+  margin-left: 10px;
+  margin-top: 50px;
+ 
+}
+
+.menu__size__left {
+  width: 360px;
+  height: 531px;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 2;
+  background-color: #FFFFFF;
+  left: 188px;
+  top: 300px;
 }
 
 .main__page__right{
@@ -840,6 +880,7 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   display: flex;
   margin-top: 51px;
   position: relative;
+  z-index: 1;
 
 }
 
@@ -850,7 +891,7 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   position: absolute;
   left: 160px;
   top: 24px;
-  z-index: 1;
+  z-index: 0;
 
 }
 
@@ -899,3 +940,247 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   margin-left: 415px;
   margin-bottom: 97px;
 }
+
+.top__background {
+  background-color: #F7F7F7;
+}
+
+.top__product {
+height: 777px;
+display: flex;
+justify-content: space-between;
+max-width: 1600px;
+position: relative;
+margin-bottom: 600px;
+}
+
+
+.top__center {
+  width: 597px;
+  height: 724px;
+  margin-top: 11px;
+
+}
+
+.pointer__left {
+  display: block;
+  background-color: rgba(42, 42, 42, 0.15);
+  margin-top: 365px;
+  height: 35px;
+  padding: 12px 17px 0px 17px;
+}
+
+.pointer__right {
+  display: block;
+  background-color: rgba(42, 42, 42, 0.15);
+  margin-top: 365px;
+  height: 35px;
+  padding: 12px 17px 0px 17px;
+}
+
+
+.middle_product {
+  width: 100%;
+  position: absolute;
+  top: 710px;
+  left: 190px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 129px;
+}
+
+.middle_product_text_1 {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-top: 65px;
+
+  padding-bottom: 12px;
+}
+
+.middle_product_text_2 {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-top: 12px;
+
+}
+
+.middle_product_text_3 {
+  width: 555px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  margin-top: 48px;
+  margin-left: 300px;
+  margin-bottom: 32px;
+  
+}
+
+.middle_product_text_4 {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  margin-bottom: 65px;
+}
+
+.middle_product_block {
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  margin-left: 540px;
+}
+
+.middle_product_block_2 {
+  border: 1px solid #EAEAEA;
+  width: 641px;
+  margin-left: 250px;
+  margin-bottom: 65px;
+}
+
+.middle_product_block_3 {
+  display: flex;
+  justify-content: center;
+}
+
+.middle_product_text_5 {
+  padding: 0px 9px 0px 23px;
+}
+
+.link_middle_product {
+  background-image: url(../Lesson-1/img/Vector.svg);
+  display: block;
+  width: 10px;
+  height: 5px;
+  margin-top: 7px;
+  margin-bottom: 49px;
+}
+
+.link_middle_product_button {
+  background-image: url(../Lesson-1/img/Add_to_Cart.svg);
+  display: block;
+  width: 212px;
+  height: 49px;
+  margin-left: 465px;
+  margin-bottom: 65px;
+}
+
+.bottom_block_product {
+  height: 128px;
+}
+.shop_middle {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.shop_middle_left {
+  width: 652px;
+  border: 1px solid #000;
+  height: 800px;
+}
+
+.shop_middle_right {
+  width: 360px;
+  border: 1px solid #000;
+  height: 800px;
+}
+
+.card_shop_1 {
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 652px;
+}
+
+.number_inside_card {
+  position: absolute;
+  right: 190px;
+  border: 1px solid #EAEAEA;
+  padding: 0px 15px 0px 15px;
+  top: 222px;
+}
+
+.block_shop {
+  height: 40px;
+}
+
+.shop_image_1 {
+width: 262px;
+height: 306px;
+}
+
+.link_card_shop {
+  display: flex;
+  text-decoration: none;
+
+}
+
+.text_shop_1 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-top: 22px;
+  margin-left: 31px;
+  margin-bottom: 36px;
+}
+
+.text_shop_2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  padding: 6px 0px 0px 32px;
+
+}
+
+.text_shop_2_2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #F16D7F;
+}
+
+.link_card_shop_inside {
+  display: flex;
+}
+
+.botom_shop_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_shop_button {
+  display: block;
+  width: 235px;
+  height: 50px;
+}
+
+.right_shop_button {
+  display: block;
+  width: 235px;
+  height: 50px;
+}
+ 
+ 
