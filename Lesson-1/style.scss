@@ -96,15 +96,31 @@
 }
 
 .menu {
-  width: 187px;
+  width: 232px;
   padding-bottom: 100px;
   position: absolute;
-  left: 170px;
+  left: 126px;
   top: 50px;
   background-color: #FFFFFF;
   flex-direction: column;
- 
+  box-shadow: 0px 0px 10px black;
 
+}
+
+.start_menu {
+  display: flex;
+  position: relative;
+}
+
+.menu_close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  display: none;
+}
+
+.menu_close:hover .menu{
+  display: none;
 }
 
 .menu__img {
@@ -112,7 +128,7 @@
   display: block;
   width: 32px;
   height: 23px;
-  
+  cursor: pointer;
   
 }
 
@@ -280,16 +296,19 @@ font-family: 'Lato', sans-serif;
   background-image: url(../Lesson-1/img/middle1.svg);
   display: block;
   height: 100%;
+  transition: background-image 0.3s;
 }
 
 .button__left:hover {
   background-image: url(../Lesson-1/img/middle1_light.svg);
+
 }
 
 .button__middle {
   background-image: url(../Lesson-1/img/middle2.svg);
   display: block;
   height: 100%;
+  transition: background-image 0.3s;
 }
 
 .button__middle:hover {
@@ -300,6 +319,7 @@ font-family: 'Lato', sans-serif;
   background-image: url(../Lesson-1/img/middle3.svg);
   display: block;
   height: 100%;
+  transition: background-image 0.3s;
 }
 
 .button__right:hover {
@@ -310,6 +330,7 @@ font-family: 'Lato', sans-serif;
   background-image: url(../Lesson-1/img/middle4.svg);
   display: block;
   height: 100%;
+  transition: background-image 0.3s;
 }
 
 .button__bottom:hover {
@@ -531,6 +552,7 @@ font-family: 'Lato', sans-serif;
   background-image: url(../Lesson-1/img/Button__Browse.svg);
   display: block;
   height: 100%;
+  transition: background-image 0.3s;
 }
 
 .button_bottom_img:hover {
@@ -666,7 +688,7 @@ margin-top: 95px;
   font-size: 24px;
   line-height: 20px;
     text-align: center;
-
+ padding-left: 10px;
   color: #222224;
 }
 
@@ -680,14 +702,17 @@ margin-top: 95px;
   color: #222224;
 }
 
-.input {
+.enter_email {
   height: 45px;
   width: 240px;
   border-radius: 15px 0px 0px 15px;
   padding-left: 15px;
+  padding-right: 15px;
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
+  outline: 0;
+  outline-offset: 0;
   font-size: 14px;
   line-height: 17px;
 }
@@ -716,7 +741,7 @@ margin-top: 95px;
   height: 36px;
   position: absolute;
   top: 18px;
-  right: 1px;
+  left: 290px;
 }
 
 .bottom_end {
@@ -751,14 +776,24 @@ margin-top: 95px;
   margin-top: 24px;
   margin-right: 15px;
   position: relative;
+  display: flex;
 }
 
 
 .facebook {
-  background-image: url(../Lesson-1/img/facebook.svg);
+  background-image: url(../Lesson-1/img/facebook_3.svg);
   display: block;
   width: 32px;
   height: 32px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+
+
+}
+
+.facebook:hover {
+  color: #fff;
+  background-color: #F16D7F;;
 }
 
 .instagram {
@@ -836,7 +871,7 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   color: #636363;
   text-decoration: none;
   padding: 0px 4px 0px 4px;
-
+  transition: background-image 0.3s;
 }
 
 .top__catalog__text__right:hover {
@@ -856,6 +891,7 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   color: #000000;
   display: flex;
   position: relative;
+  
 }
 
 .page__button__left {
@@ -864,7 +900,7 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   margin-left: 10px;
   margin-top: 55px;
   background-image: url(../Lesson-1/img/FILTER.svg);
-  
+  cursor: pointer;
 }
 
 .page__button__left:hover {
@@ -876,12 +912,11 @@ background-image: url(../Lesson-1/img/inst__2.svg);
 
 .menu__size__left {
   width: 360px;
-  position: relative;
   position: absolute;
   z-index: 2;
   background-color: #FFFFFF;
-  left: 188px;
-  top: 300px;
+  left: 1px;
+  top: 82px;
   box-shadow: 0 8px 10px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
 }
 
@@ -935,9 +970,7 @@ background-image: url(../Lesson-1/img/inst__2.svg);
   left: 160px;
   top: 24px;
   z-index: 0;
-
   box-shadow: 0 8px 10px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
-
 }
 
 .input__menu {
@@ -975,10 +1008,12 @@ details > summary {
  margin-top: 7px;
  background-image: url(../Lesson-1/img/Vector_bottom.svg);
  background-repeat: no-repeat;
+ cursor: pointer;
 }
 
 .main__page {
   display: flex;
+  position: relative;
 }
 
 
@@ -1202,7 +1237,7 @@ margin-bottom: 600px;
 .card_shop_1 {
   display: flex;
   position: relative;
-  box-shadow: 10px 15px 20px 4px (0 0 0 / 20%);
+  box-shadow: grey 10px 15px 20px 4px;
   width: 652px;
   
 }
@@ -1311,6 +1346,9 @@ height: 306px;
   height: 45px;
   margin-top: 20px;
   padding-left: 17px;
+  padding-right: 17px;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .hearing_input{
@@ -1445,6 +1483,7 @@ height: 306px;
   text-decoration: none;
   display: flex;
   margin-bottom: 96px;
+
 }
 
 .text_button_registration {
@@ -1453,9 +1492,10 @@ height: 306px;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #FFF;
   padding: 16px 20px 17px 29px;
 }
+
 
 .img_button_registration {
   width: 17px;
@@ -1591,4 +1631,19 @@ height: 306px;
 
 .asd:hover {
   color: #EF5B70;
+}
+
+.socials__item {
+  margin: 0 3.5px;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s;
+}
+
+.socials__item:hover {
+  background-color: #EF5B70;
 }

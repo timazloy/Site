@@ -93,16 +93,36 @@
 }
 
 .menu {
-  width: 187px;
+  width: 232px;
   padding-bottom: 100px;
   position: absolute;
-  left: 170px;
+  left: 126px;
   top: 50px;
   background-color: #FFFFFF;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+}
+
+.start_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.menu_close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  display: none;
+}
+
+.menu_close:hover .menu {
+  display: none;
 }
 
 .menu__img {
@@ -110,6 +130,7 @@
   display: block;
   width: 32px;
   height: 23px;
+  cursor: pointer;
 }
 
 .menu__link {
@@ -269,6 +290,8 @@
   background-image: url(../Lesson-1/img/middle1.svg);
   display: block;
   height: 100%;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
 }
 
 .button__left:hover {
@@ -279,6 +302,8 @@
   background-image: url(../Lesson-1/img/middle2.svg);
   display: block;
   height: 100%;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
 }
 
 .button__middle:hover {
@@ -289,6 +314,8 @@
   background-image: url(../Lesson-1/img/middle3.svg);
   display: block;
   height: 100%;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
 }
 
 .button__right:hover {
@@ -299,6 +326,8 @@
   background-image: url(../Lesson-1/img/middle4.svg);
   display: block;
   height: 100%;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
 }
 
 .button__bottom:hover {
@@ -529,6 +558,8 @@
   background-image: url(../Lesson-1/img/Button__Browse.svg);
   display: block;
   height: 100%;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
 }
 
 .button_bottom_img:hover {
@@ -668,6 +699,7 @@
   font-size: 24px;
   line-height: 20px;
   text-align: center;
+  padding-left: 10px;
   color: #222224;
 }
 
@@ -681,14 +713,17 @@
   color: #222224;
 }
 
-.input {
+.enter_email {
   height: 45px;
   width: 240px;
   border-radius: 15px 0px 0px 15px;
   padding-left: 15px;
+  padding-right: 15px;
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
+  outline: 0;
+  outline-offset: 0;
   font-size: 14px;
   line-height: 17px;
 }
@@ -719,7 +754,7 @@
   height: 36px;
   position: absolute;
   top: 18px;
-  right: 1px;
+  left: 290px;
 }
 
 .bottom_end {
@@ -757,13 +792,23 @@
   margin-top: 24px;
   margin-right: 15px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .facebook {
-  background-image: url(../Lesson-1/img/facebook.svg);
+  background-image: url(../Lesson-1/img/facebook_3.svg);
   display: block;
   width: 32px;
   height: 32px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.facebook:hover {
+  color: #fff;
+  background-color: #F16D7F;
 }
 
 .instagram {
@@ -846,6 +891,8 @@
   color: #636363;
   text-decoration: none;
   padding: 0px 4px 0px 4px;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
 }
 
 .top__catalog__text__right:hover {
@@ -873,6 +920,7 @@
   margin-left: 10px;
   margin-top: 55px;
   background-image: url(../Lesson-1/img/FILTER.svg);
+  cursor: pointer;
 }
 
 .page__button__left:hover {
@@ -881,12 +929,11 @@
 
 .menu__size__left {
   width: 360px;
-  position: relative;
   position: absolute;
   z-index: 2;
   background-color: #FFFFFF;
-  left: 188px;
-  top: 300px;
+  left: 1px;
+  top: 82px;
   -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
           box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
 }
@@ -976,12 +1023,14 @@ details > summary {
   margin-top: 7px;
   background-image: url(../Lesson-1/img/Vector_bottom.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .main__page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .pages {
@@ -1212,8 +1261,8 @@ details > summary {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-shadow: 10px 15px 20px 4px 0 0 0/20%;
-          box-shadow: 10px 15px 20px 4px 0 0 0/20%;
+  -webkit-box-shadow: grey 10px 15px 20px 4px;
+          box-shadow: grey 10px 15px 20px 4px;
   width: 652px;
 }
 
@@ -1326,6 +1375,9 @@ details > summary {
   height: 45px;
   margin-top: 20px;
   padding-left: 17px;
+  padding-right: 17px;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .hearing_input {
@@ -1475,7 +1527,7 @@ details > summary {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #FFF;
   padding: 16px 20px 17px 29px;
 }
 
@@ -1623,5 +1675,27 @@ details > summary {
 
 .asd:hover {
   color: #EF5B70;
+}
+
+.socials__item {
+  margin: 0 3.5px;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.socials__item:hover {
+  background-color: #EF5B70;
 }
 /*# sourceMappingURL=style.css.map */
