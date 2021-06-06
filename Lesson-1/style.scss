@@ -104,7 +104,7 @@
   background-color: #FFFFFF;
   flex-direction: column;
   box-shadow: 0px 0px 10px black;
-
+  z-index: 1;
 }
 
 .start_menu {
@@ -113,15 +113,14 @@
 }
 
 .menu_close {
-  position: absolute;
-  right: 20px;
-  top: 17px;
-  display: none;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 128px;
+  margin-top: 15px;
 }
 
-.menu_close:hover .menu{
-  display: none;
-}
+
 
 .menu__img {
   background-image: url(../Lesson-1/img/h3.svg);
@@ -718,12 +717,34 @@ margin-top: 95px;
 }
 
 .footer_button {
-  background-image: url(../Lesson-1/img/footer_button.svg);
+  background-color: #F16D7F;
   display: block;
   height: 100%;
   background-repeat: no-repeat;
   width: 100px;
-  height: 50px;
+  border-radius: 0px 15px 15px 0px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer_button:hover {
+  background-color: #fff;
+
+}
+
+.footer_button_text:hover {
+  color: #F16D7F;
+}
+
+.footer_button_text {
+  font-family: Lato; 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  color: #FFFFFF;
+  padding: 16px;
 }
 
 .footer__placeholder {
@@ -1122,6 +1143,7 @@ margin-bottom: 600px;
   background-color: #fff;
   text-align: center;
   margin-bottom: 129px;
+  border: 1px solid #EAEAEA;
 }
 
 .middle_product_text_1 {
@@ -1196,7 +1218,7 @@ margin-bottom: 600px;
 }
 
 .link_middle_product {
-  background-image: url(../Lesson-1/img/Vector.svg);
+  background-image: url(../Lesson-1/img/arrowwww.svg);
   display: block;
   width: 10px;
   height: 5px;
@@ -1206,12 +1228,19 @@ margin-bottom: 600px;
 
 .link_middle_product_button {
   background-image: url(../Lesson-1/img/Add_to_Cart.svg);
+  background-repeat: no-repeat;
+
   display: block;
   width: 212px;
   height: 49px;
   margin-left: 465px;
   margin-bottom: 65px;
+  text-decoration: none;
 }
+
+
+
+
 
 .bottom_block_product {
   height: 128px;
@@ -1309,22 +1338,32 @@ height: 306px;
 
 .left_shop_button {
   display: block;
-
   border: 1px solid #A4A4A4;
   margin-top: 72px;
   text-decoration: none;
   text-align: center;
+  transition: 0.3s;
+}
+
+.left_shop_button:hover{
+  background-color: #F16D7F;
+}
+
+.right_shop_button:hover{
+  background-color: #F16D7F;
+}
+
+.text_shop_link:hover{
+  color: #fff;
 }
 
 .right_shop_button {
   display: block;
- 
-
   border: 1px solid #A4A4A4;
   margin-top: 72px;
   text-decoration: none;
   text-align: center;
-
+  transition: 0.3s;
 }
 
 .text_shop_link {
@@ -1415,19 +1454,31 @@ height: 306px;
 }
 
 .confurm_button {
-  width: 273px;
+  margin: 17px 43px 0px 43px;
   display: block;
   text-align: center;
-  padding: 15px 0px 15px 0px;
-  margin: 17px 42px 42px 42px;
   text-decoration: none;
   background-color: #F16D7F;
+  transition: 0.3s;
+}
+
+.confurm_button:hover{
+  background-color: #fff;
+}
+
+.confurm_button_text {
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  padding: 15px 42px 15px 42px;
+  
+}
+
+.confurm_button_text:hover{
+  color: #F16D7F;
 }
 
 .registration_middle {
